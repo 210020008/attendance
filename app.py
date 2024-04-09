@@ -15,7 +15,7 @@ index_html = '''
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    @import url( 
+@import url( 
 "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); 
 
 * { 
@@ -25,13 +25,12 @@ index_html = '''
 	font-family: "Poppins", sans-serif; 
 } 
 
-body {
-    background-color: #000000;
-    background-image: url('https://getwallpapers.com/wallpaper/full/7/7/4/135893.jpg');
-    background-size: cover; /* Optional: Adjusts the size of the background image */
-    background-repeat: no-repeat; /* Optional: Prevents the background image from repeating */
-}
-
+body { 
+	background-color: #000000; 
+	background-image: linear-gradient(bottom, 
+									#000058 60%, 
+									#000033 40%); 
+} 
 
 header { 
 	width: 100%; 
@@ -245,37 +244,26 @@ li:nth-of-type(20) {
 
 	0%, 
 	100% { 
-		box-shadow: 0 0 5px 2px #6C0345, 
-					0 0 10px 5px #6C0345, 
-					0 0 30px 10px #6C0345; 
+		box-shadow: 0 0 5px 2px rgb(250, 193, 93), 
+					0 0 10px 5px rgb(255, 242, 63), 
+					0 0 30px 10px rgb(255, 219, 41); 
 		height: 0; 
 		width: 0; 
 	} 
 
 	50% { 
-		box-shadow: 0 0 5px 2px #6C0345, 
-					0 0 20px 10px #6C0345, 
-					0 0 40px 15px #6C0345; 
+		box-shadow: 0 0 5px 2px rgb(250, 193, 93), 
+					0 0 20px 10px rgb(255, 228, 140), 
+					0 0 40px 15px rgb(255, 219, 41); 
 	} 
 
 	75% { 
-		box-shadow: 0 0 0px 0px #6C0345, 
-					0 0 0px 0px #6C0345, 
-					0 0 0px 0px #6C0345; 
+		box-shadow: 0 0 0px 0px rgb(250, 193, 93), 
+					0 0 0px 0px rgb(255, 228, 140), 
+					0 0 0px 0px rgb(255, 219, 41); 
 	} 
 }
-/* Keyframes for bounce animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
+
 
 /* Apply animation and color transition to the heading */
 .bounce-color {
@@ -292,7 +280,7 @@ li:nth-of-type(20) {
 }
 body {
     font-family: "Comic Sans MS", cursive;
-    color : #008DDA;
+    color : #C6EBC5;
     margin: 0;
     padding: 0;
 	text-align: center;
